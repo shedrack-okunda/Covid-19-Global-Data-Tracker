@@ -2,140 +2,63 @@
 
 ## Project Description
 
-In this project, learners will build a data analysis and reporting notebook (or app) that tracks global COVID-19 trends. The project will analyze cases, deaths, recoveries, and vaccinations across countries and time. Learners will clean and process real-world data, perform exploratory data analysis (EDA), generate insights, and visualize trends using Python data tools.
+This project is a data analysis and reporting notebook I built to track global COVID-19 trends. I worked with real-world data on cases, deaths, recoveries, and vaccinations across different countries and over time. Throughout the project, I cleaned and processed the data, performed exploratory data analysis (EDA), generated insights, and visualized trends using Python data tools.
 
-By the end, they’ll have a data analysis report with visuals and narrative insights, suitable for presentation or publishing.
+By the end, I created a comprehensive data analysis report with visuals and narrative insights, suitable for sharing and presentation.
 
 ## 🚩 Project Objectives
 
-- ✅ Import and clean COVID-19 global data
-- ✅ Analyze time trends (cases, deaths, vaccinations)
-- ✅ Compare metrics across countries/regions
-- ✅ Visualize trends with charts and maps
-- ✅ Communicate findings in a Jupyter Notebook or PDF report
+- Imported and cleaned COVID-19 global data
+- Analyzed time trends including cases, deaths, and vaccinations
+- Compared key metrics across countries and regions
+- Visualized trends with charts and maps
+- Communicated my findings clearly in a Jupyter Notebook report
 
-## 🗂️ Project Segments (Step-by-Step Guide)
+## 🗂️ How I Approached the Project
 
 ### 1️⃣ Data Collection
 
-**Goal:** Obtain a reliable COVID-19 dataset.
-
-- **Data Sources:**
-
-  - Our World in Data COVID-19 Dataset (CSV & API)
-  - Johns Hopkins University GitHub Repository
-
-  👉 Recommended for beginners: Use the cleaned CSV from Our World in Data (easy to load with pandas).
-
-- **Action:** Download `owid-covid-data.csv` from the above link and save it in your working folder.
+I obtained the COVID-19 dataset from Our World in Data by downloading the `owid-covid-data.csv` file and saved it to my working directory.
 
 ### 2️⃣ Data Loading & Exploration
 
-**Goal:** Load the dataset and explore its structure.
-
-- **Tasks:**
-
-  - Load data using `pandas.read_csv()`.
-  - Check columns: `df.columns`.
-  - Preview rows: `df.head()`.
-  - Identify missing values: `df.isnull().sum()`.
-
-- **Tools:** pandas
-
-- **Key columns:** date, location, total_cases, total_deaths, new_cases, new_deaths, total_vaccinations, etc.
+Using pandas, I loaded the dataset and explored its structure by examining columns, previewing rows, and checking for missing values. This helped me understand the data before starting analysis.
 
 ### 3️⃣ Data Cleaning
 
-**Goal:** Prepare data for analysis.
-
-- **Tasks:**
-
-  - Filter countries of interest (e.g., Kenya, USA, India).
-  - Drop rows with missing dates/critical values.
-  - Convert date column to datetime: `pd.to_datetime()`.
-  - Handle missing numeric values with `fillna()` or `interpolate()`.
-
-- **Tools:** pandas
+I filtered the dataset for countries of interest (such as Kenya, USA, and India), removed rows with missing critical values, converted date columns to datetime format, and handled missing numeric values using interpolation and fillna to prepare the data for analysis.
 
 ### 4️⃣ Exploratory Data Analysis (EDA)
 
-**Goal:** Generate descriptive statistics & explore trends.
-
-- **Tasks:**
-
-  - Plot total cases over time for selected countries.
-  - Plot total deaths over time.
-  - Compare daily new cases between countries.
-  - Calculate the death rate: `total_deaths / total_cases`.
-
-- **Visualizations:**
-
-  - Line charts (cases & deaths over time).
-  - Bar charts (top countries by total cases).
-  - Heatmaps (optional for correlation analysis).
-
-- **Tools:** matplotlib, seaborn
+I generated descriptive statistics and explored trends by plotting total cases and deaths over time for selected countries. I compared daily new cases and calculated important indicators like the death rate.
 
 ### 5️⃣ Visualizing Vaccination Progress
 
-**Goal:** Analyze vaccination rollouts.
+I analyzed vaccination rollout progress by plotting cumulative vaccinations over time and comparing vaccination percentages across countries using line charts.
 
-- **Tasks:**
+### 6️⃣ Optional Choropleth Map
 
-  - Plot cumulative vaccinations over time for selected countries.
-  - Compare % vaccinated population.
-
-- **Charts:** Line charts, optional pie charts for vaccinated vs. unvaccinated.
-
-- **Tools:** matplotlib, seaborn
-
-### 6️⃣ Optional: Build a Choropleth Map
-
-**Goal:** Visualize cases or vaccination rates by country on a world map.
-
-- **Tools:** Plotly Express or geopandas (advanced)
-
-- **Tasks:**
-  - Prepare a dataframe with `iso_code`, `total_cases` for the latest date.
-  - Plot a choropleth showing case density or vaccination rates.
+To visualize case density globally, I created a choropleth map showing total cases by country using Plotly Express.
 
 ### 7️⃣ Insights & Reporting
 
-**Goal:** Summarize findings.
+Finally, I summarized key insights from the data, highlighted interesting patterns, and documented everything in a well-structured Jupyter Notebook combining code, visuals, and markdown explanations. I also exported the notebook to PDF for easy sharing.
 
-- **Tasks:**
+## 🛠️ Tools & Libraries I Used
 
-  - Write 3-5 key insights from the data (e.g., "X country had the fastest vaccine rollout").
-  - Highlight anomalies or interesting patterns.
-  - Use markdown cells in Jupyter Notebook to write your narrative.
+- Jupyter Notebook
+- pandas
+- matplotlib
+- seaborn
+- Plotly Express (for interactive maps)
 
-- **Deliverables:** A well-documented Jupyter Notebook combining:
-  - Code
-  - Visualizations
-  - Narrative explanations
-  - Optional export: Notebook → PDF or a PowerPoint with screenshots.
+## 🎯 Optional Stretch Goals I Explored
 
-## 🛠️ Recommended Tools
+- Allowed dynamic selections of countries and date ranges (user inputs)
+- Explored building interactive dashboards (future improvement areas)
 
-- ✅ Jupyter Notebook (or VS Code with Jupyter extension)
-- ✅ pandas
-- ✅ matplotlib & seaborn
-- ✅ Optional: plotly, geopandas
+## ✅ Final Outcome
 
-## 🎯 Optional Stretch Goals
+I successfully built a reproducible and informative data analysis report tracking global COVID-19 trends. The project enhanced my skills in data cleaning, exploration, visualization, and storytelling with data.
 
-- ⭐ Allow user input (choose country & date range)
-- ⭐ Build an interactive dashboard with Streamlit or Dash
-- ⭐ Include hospitalization or ICU data if available
-
-## ✅ Final Deliverable
-
-A Jupyter Notebook data report that:
-
-- Loads, cleans, analyzes, and visualizes COVID-19 data.
-- Communicates insights with a clear narrative and visuals.
-- Is easy to read, well-commented, and reproducible.
-
-## Key Objectives You May Have Achieved
-
-- ✅ Collected global COVID-19 data from Our World in Data
+Feel free to explore the notebook to see the detailed analysis, visualizations, and insights I’ve drawn from the data.
