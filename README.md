@@ -62,3 +62,9 @@ Finally, I summarized key insights from the data, highlighted interesting patter
 I successfully built a reproducible and informative data analysis report tracking global COVID-19 trends. The project enhanced my skills in data cleaning, exploration, visualization, and storytelling with data.
 
 Feel free to explore the notebook to see the detailed analysis, visualizations, and insights I’ve drawn from the data.
+
+## 📝 Key Findings
+
+- India had a sharp case surge in 2021.
+- The US had the highest total deaths.
+- Kenya’s vaccination rate rose steadily in late 2021.
